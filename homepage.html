@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--<script type="text/javascript" src="homepagejs.js"></script>-->
+    <meta charset="utf-8" />
+    <title>Kays Closet</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <!--Fix this stylesheet later-->
+    <link rel="stylesheet" href="Homepagestyle.css" />
+    <script src="https://kit.fontawesome.com/f1c44d2fb5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <header>
+        
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="active" href="#Home">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="#outfitgallery">Outfit Gallery</a>
+            <a href="#services">Services</a>
+            <a href="#socials">Socials</a>
+        </div>
+        <span class="MenuButton" onclick="openNav()">&#9776; MENU</span>
+
+        <h1> Kay's Closet</h1>
+
+        <div class="navbar">
+            <a class="active" href="#all">All</a>
+            <a href="#shirts">Shirts</a>
+            <a href="#pants">Pants</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#shoes">Shoes</a>
+            <a href="#jewelry">Jewelry</a>
+        </div>
+
+    </header>
+
+    <h3>Cute twt emojis here</h3>
+
+
+    <!--New spot for filter-->
+
+    <div class="dropdownSearch">
+        <button onclick="FilterButton()" class="dropbtn">Filter</button>
+        <div id="myDropdown" class="DropDownContent">
+            <p class="filterCategories">Color</p>
+            <ul class="FilterList">
+                <!--If you want to use custom bullet points, in the css use list-style-image: url('') -->
+                <li>
+                    <label for="Pink">Pink</label>
+                    <input id="Pink" type="checkbox" name="Color" value="Pink" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Yellow">Yellow</label>
+                    <input id="Yellow" type="checkbox" name="Color" value="Yellow" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Purple">Purple</label>
+                    <input id="Purple" type="checkbox" name="Color" value="Purple" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Red">Red</label>
+                    <input id="Red" type="checkbox" name="Color" value="Red" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Green">Green</label>
+                    <input id="Green" type="checkbox" name="Color" value="Green" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Blue">Blue</label>
+                    <input id="Blue" type="checkbox" name="Color" value="Blue" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Orange">Orange</label>
+                    <input id="Orange" type="checkbox" name="Color" value="Orange" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Black">Black</label>
+                    <input id="Black" type="checkbox" name="Color" value="Black" />
+                    <br>
+                </li>
+                <li>
+                    <label for="White">White</label>
+                    <input id="White" type="checkbox" name="Color" value="White" />
+                </li>
+            </ul>
+            <!--Type of clothing-->
+            <p class="filterCategories">Type</p>
+            <ul class="FilterList">
+                <!--If you want to use custom bullet points, in the css use list-style-image: url('') -->
+                <li>
+                    <label for="Long Sleeve">Long Sleeve</label>
+                    <input id="LongSleeve" type="checkbox" name="Type" value="LongSleeve" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Short Sleeve">Short Sleeve</label>
+                    <input id="ShortSleeve" type="checkbox" name="Type" value="ShortSleeve" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Dress">Dress</label>
+                    <input id="Dress" type="checkbox" name="Type" value="Dress" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Swim">Swim</label>
+                    <input id="Swim" type="checkbox" name="Type" value="Swim" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Shorts">Shorts</label>
+                    <input id="Shorts" type="checkbox" name="Type" value="Shorts" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Jeans">Jeans</label>
+                    <input id="Jeans" type="checkbox" name="Type" value="Jeans" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Skirts">Skirts</label>
+                    <input id="Skirts" type="checkbox" name="Type" value="Skirts" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Sneakers">Sneakers</label>
+                    <input id="Sneakers" type="checkbox" name="Type" value="Sneakers" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Heels">Heels</label>
+                    <input id="Heels" type="checkbox" name="Type" value="Heels" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Boots">Boots</label>
+                    <input id="Boots" type="checkbox" name="Type" value="Boots" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Accessory">Accessory</label>
+                    <input id="Accessory" type="checkbox" name="Type" value="Accessory" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Necklace">Necklace</label>
+                    <input id="Necklace" type="checkbox" name="Type" value="Necklace" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Earrings">Earrings</label>
+                    <input id="Earrings" type="checkbox" name="Type" value="Earrings" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Rings">Rings</label>
+                    <input id="Rings" type="checkbox" name="Type" value="Rings" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Bags">Bags</label>
+                    <input id="Bags" type="checkbox" name="Type" value="Bags" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Misc">Misc</label>
+                    <input id="Misc" type="checkbox" name="Type" value="Necklace" />
+                    <br>
+                </li>
+            </ul>
+            <!--Occasion-->
+            <p class="filterCategories">Type</p>
+            <ul class="FilterList">
+                <!--If you want to use custom bullet points, in the css use list-style-image: url('') -->
+                <li>
+                    <label for="Party">Party</label>
+                    <input id="Party" type="checkbox" name="Type" value="Party" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Sleep">Sleep</label>
+                    <input id="Sleep" type="checkbox" name="Type" value="Sleep" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Date">Date</label>
+                    <input id="Date" type="checkbox" name="Type" value="Date" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Holiday">Holiday</label>
+                    <input id="Holiday" type="checkbox" name="Type" value="Holiday" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Casual">Casual</label>
+                    <input id="Casual" type="checkbox" name="Type" value="Casual" />
+                    <br>
+                </li>
+            </ul>
+            <!--Style-->
+            <p class="filterCategories">Style</p>
+            <ul class="FilterList">
+                <!--If you want to use custom bullet points, in the css use list-style-image: url('') -->
+                <li>
+                    <label for="Baddie">Baddie</label>
+                    <input id="Baddie" type="checkbox" name="Type" value="Baddie" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Y2K">Y2K</label>
+                    <input id="YK" type="checkbox" name="Type" value="YK" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Academia">Academia</label>
+                    <input id="Academia" type="checkbox" name="Type" value="Academia" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Barbie">Barbie</label>
+                    <input id="Barbie" type="checkbox" name="Type" value="Barbie" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Cutesie">Cutesie</label>
+                    <input id="Cutesie" type="checkbox" name="Type" value="Cutesie" />
+                    <br>
+                </li>
+                <li>
+                    <label for="Street">Street</label>
+                    <input id="Street" type="checkbox" name="Type" value="Street" />
+                    <br>
+                </li>
+            </ul>
+            <input class="FilterSubmit" type="submit" value="Search" />
+        </div>
+    </div>
+
+    <!--Search Bar-->
+    <div class="SearchBar">
+        <input type="text" name="searchbox" placeholder="Search!" />
+    </div>
+
+    <!--Keep this at the bottom-->
+    <a href="#" class="previous">&#8249;</a>
+    <a href="#" class="next">&#8250;</a>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
+
+<script>//the function to open the side bar
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function FilterButton() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropbtn");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("logo").style.fontSize = "30px";
+        } else {
+            document.getElementById("logo").style.fontSize = "90px";
+        }
+    }</script>
